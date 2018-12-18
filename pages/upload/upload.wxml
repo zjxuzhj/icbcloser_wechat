@@ -1,35 +1,35 @@
-<view class="question-form">
+<view class="upload-form">
 
-  <view class="question-input-area">
+  <view class="upload-input-area">
 
     <!-- 问题标题  -->
     <view class="detail">
-      <input class="question-title" placeholder="简介（描述你战报精彩之处）" maxlength="500" placeholder-style="color:#b3b3b3;font-size:14px;" bindinput="handleTitleInput"></input>
+      <input class="upload-title" placeholder="简介（描述你战报精彩之处）" maxlength="500" placeholder-style="color:#b3b3b3;font-size:14px;" bindinput="handleTitleInput"></input>
       <view class="title-input-counter">{{titleCount}}/500</view>
     </view>
     <view class="skill">
-      <input class="question-title" placeholder="大营战法（可简写，两个战法间加一个空格即可）" placeholder-style="color:#b3b3b3;font-size:14px;" bindinput="handleTitleInput"></input>
+      <input class="upload-title" placeholder="大营战法（可简写，两个战法间加一个空格即可）" placeholder-style="color:#b3b3b3;font-size:14px;" bindinput="handleTitleInput"></input>
     </view>
 
     <view class="skill">
-      <input class="question-title" placeholder="中军战法（不用带武将名称）" placeholder-style="color:#b3b3b3;font-size:14px;" bindinput="handleTitleInput"></input>
+      <input class="upload-title" placeholder="中军战法（不用带武将名称）" placeholder-style="color:#b3b3b3;font-size:14px;" bindinput="handleTitleInput"></input>
     </view>
     <view class="skil_no_border">
-      <input class="question-title" placeholder="前锋战法（例子：一夫 回马）" placeholder-style="color:#b3b3b3;font-size:14px;" bindinput="handleTitleInput"></input>
+      <input class="upload-title" placeholder="前锋战法（例子：一夫 回马）" placeholder-style="color:#b3b3b3;font-size:14px;" bindinput="handleTitleInput"></input>
     </view>
   
 
   </view>
 
-  <view class="question-images-area">
+  <view class="upload-images-area">
 
     <!-- 添加图片按钮  -->
-    <view class="question-images-tool">
+    <view class="upload-images-tool">
       <button type="default" size="mini" bindtap="chooseImage" wx:if="{{images.length<6}}">添加图片</button>
     </view>
 
     <!-- 图片缩略图  -->
-    <view class="question-images">
+    <view class="upload-images">
       <block wx:for="{{images}}" wx:key="*this">
         <view class="q-image-wrap">
           <image class="q-image" src="{{item}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview"></image>

@@ -2,11 +2,11 @@ page {
   background: #f6f7f8;
 }
 
-.question-form {
+.upload-form {
   margin: 25rpx;
 }
 
-.question-input-area {
+.upload-input-area {
   background-color: #fff;
   border: 1rpx solid #f2f2f2;
   border-radius: 4rpx;
@@ -20,7 +20,7 @@ page {
   padding: 20rpx 0;
 }
 
-.question-title {
+.upload-title {
   flex: 1;
 }
 
@@ -53,16 +53,17 @@ page {
   margin: 10rpx 30rpx;
 }
 
-.question-images-area {
+.upload-images-area {
   padding: 40rpx 0;
 }
 
-.question-images-tool {
+.upload-images-tool {
   display: flex;
   align-items: center;
+  padding-left: 3px;
 }
 
-.question-images {
+.upload-images {
   display: flex;
   align-items: center;
   margin-top: 40rpx;
