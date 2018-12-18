@@ -1,0 +1,79 @@
+/**app.wxss**/
+
+page {
+  /* background-color: #E6E6E6; */
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.vertical {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer {
+  text-align: center;
+  padding-top: 36rpx;
+  padding-bottom: 48rpx;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.menu_item {
+  height: 0%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  box-sizing: border-box;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.menu_text {
+  font-family: '幼圆';
+  font-size: large;
+  position: relative;
+  top: 5px;
+  color: #48495f;
+}
+
+.img {
+  width: 100%;
+}
+
+.detail_text {
+  font-size: medium;
+  padding-top: 5px;
+  color: #000;
+}
+
+.detail_skill_text {
+  padding-top: 30px;
+  font-size: medium;
+  padding-left: 20px;
+  color: #000;
+  justify-content: center;
+  align-items: center;
+}

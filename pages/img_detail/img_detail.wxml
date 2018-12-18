@@ -1,0 +1,14 @@
+<!--pages/img_detail/img_detail.wxml-->
+<view class="container">
+  <image class="img" mode='widthFix' src="{{imageBean.img.url}}"></image>
+  <text class="menu_text">{{imageBean.title}}</text>
+  <text class="detail_text">{{imageBean.detail}}</text>
+  <view class="vertical">
+  <view class="container">
+  <text class="detail_skill_text">大营</text>
+  </view>
+  <text class="detail_skill_text">中军</text>
+  <text class="detail_skill_text">前锋</text>
+</view>
+  <text class="menu_text">{{imageBean.skill}}</text>
+</view>
