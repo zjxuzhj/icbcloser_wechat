@@ -1,0 +1,22 @@
+/* pages/home.wxss */
+
+.update_text {
+}
+
+.text_border {
+  text-align: center;
+}
+
+.border {
+  /* 加在div中使子布局垂直居中 */
+  text-align: center;
+  margin: 20px;
+}
+
+.image {
+  position: absolute;
+  margin-top: 20px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

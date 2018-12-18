@@ -1,0 +1,8 @@
+<!--pages/home.wxml-->
+<view class="border">
+  <scroll-view scroll-y style="height: 240px;" class='text_border '>
+    <text class="update_text">{{updateString}}</text>
+  </scroll-view>
+
+  <image class="image" style="width: 280px; height: 155px; background-color: #eeeeee;" src="http://bmob-cdn-14564.b0.upaiyun.com/2018/12/19/adb77ae140500bac8017436d9ba73399.jpg"></image>
+</view>

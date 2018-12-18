@@ -1,11 +1,10 @@
 {
-  "pages":[
-    "pages/upload/upload",
+  "pages": [
+    "pages/home/home",
     "pages/index/index",
     "pages/black/black",
     "pages/normal/normal",
     "pages/hot/hot",
-    
     "pages/img_detail/img_detail"
   ],
   "window": {
@@ -19,10 +18,10 @@
     "selectedColor": "#11cd6e",
     "borderStyle": "black",
     "list": [
-        {
-          "pagePath": "pages/upload/upload",
-          "text": "上传战报"
-        },
+      {
+        "pagePath": "pages/home/home",
+        "text": "更新日志"
+      },
       {
         "pagePath": "pages/index/index",
         "text": "最新"
@@ -38,7 +37,7 @@
       {
         "pagePath": "pages/hot/hot",
         "text": "热门"
-      } 
+      }
     ]
   }
 }
