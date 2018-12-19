@@ -1,13 +1,18 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="menu_item" bindtap="intoDetailPage" data-index="{{index}}" wx:for="{{results}}" wx:for-index="index" wx:for-item="item" wx:key="menus">
-    <image class="img" mode='widthFix' src="{{results[index].img.url}}"></image>
-    <text class="menu_text">{{results[index].title}}</text>
-  </view>
-  <view class="footer" wx:if="{{!hasMoreData}}">
-    没有更多了
-  </view>
-  <view class="footer" wx:if="{{hasMoreData}}">
-    加载中...
+<view class="section tc">
+  <video src="https://gss3.baidu.com/6LZ0ej3k1Qd3ote6lo7D0j9wehsv/tieba-smallvideo-transcode/21878043_99c9bd89d3be7322eb24da5fd66504d1_0.mp4" controls></video>
+  <view class="btn-area">
+    <button bindtap="bindButtonTap">获取视频</button>
   </view>
 </view>
+<view class='tablist'>
+  <view wx:for="{{tabList}}" class='item {{current==index?"select":""}}' data-pos='{{index}}' bindtap='tabItemClick'>
+    <text>{{item}}</text>
+  </view>
+</view>
+<swiper class='out' current='{{current}}' indicator-dots="{{false}}" autoplay="{{false}}" bindchange="contentChange">
+  <swiper-item wx:for="{{tabList}}">
+    <view class='content'>
+      <text>{{item}}</text>
+    </view>
+  </swiper-item>
+</swiper>

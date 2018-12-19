@@ -10,7 +10,9 @@ Page({
     pageIndex: 0,
     pageSize: 15,
     isLoading: false,
-    results: []
+    results: [],
+    tabList: ['最新', '科技', '标配','热门','开荒'],
+    current: 0,//当前选中的Tab项
   },
   intoDetailPage: function (e) {
     var index=parseInt(e.currentTarget.dataset.index)
@@ -105,7 +107,26 @@ Page({
       this.getList(this.data.pageIndex)
     }
   },
+  /**
+       * 内容区域swiper的切换事件
+       */
+  contentChange: function (e) {
+    this.setData({
+      current: e.detail.current
+    })
+  },
+  onLoad: function () {
 
+  },
+
+  /**
+   * Tab的点击切换事件
+   */
+  tabItemClick: function (e) {
+    this.setData({
+      current: e.currentTarget.dataset.pos
+    })
+  },
   /**
    * 用户点击右上角分享
    */

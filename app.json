@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/home/home",
     "pages/index/index",
+    "pages/home/home",
+    
     "pages/black/black",
     "pages/normal/normal",
     "pages/hot/hot",
@@ -19,13 +20,14 @@
     "borderStyle": "black",
     "list": [
       {
-        "pagePath": "pages/home/home",
-        "text": "更新日志"
-      },
-      {
         "pagePath": "pages/index/index",
         "text": "最新"
       },
+      {
+        "pagePath": "pages/home/home",
+        "text": "更新日志"
+      },
+     
       {
         "pagePath": "pages/black/black",
         "text": "科技"
