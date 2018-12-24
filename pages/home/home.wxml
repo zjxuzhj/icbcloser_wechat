@@ -4,5 +4,48 @@
     <text class="update_text">{{updateString}}</text>
   </scroll-view>
 
+  <!--抽将视频-->
+  <view class="index_btn_box">
+    <view class="index_btn_li" bindtap="onChooseVideo">
+      <view class="index_btn_li_bottom">
+        <image src="/images/video.png" class="index_btn_img"></image>
+      </view>
+      <view class="index_btn_li_top">抽将视频</view>
+
+    </view>
+
+    <!--错题集-->
+    <view class="index_btn_li" bindtap="onErr" hidden="true">
+      <view class="index_btn_li_top">错题集</view>
+      <view class="index_btn_li_bottom">
+        <image src="/images/index_bb.png" class="index_btn_img"></image>
+      </view>
+    </view>
+
+    <!--收藏夹-->
+    <view class="index_btn_li" bindtap="onFavo" hidden="true">
+      <view class="index_btn_li_top">收藏夹</view>
+      <view class="index_btn_li_bottom">
+        <image src="/images/index_cc.png" class="index_btn_img"></image>
+      </view>
+    </view>
+
+    <!--考试流程-->
+    <view class="index_btn_li" bindtap="onExamProcess" hidden="true">
+      <view class="index_btn_li_top">考试流程</view>
+      <view class="index_btn_li_bottom">
+        <image src="/images/index_dj.png" class="index_btn_img"></image>
+      </view>
+    </view>
+
+    <!--关于我们-->
+    <view class="index_btn_li" bindtap="onAboutUs" hidden="true">
+      <view class="index_btn_li_top">关于我们</view>
+      <view class="index_btn_li_bottom">
+        <image src="/images/index_dj.png" class="index_btn_img"></image>
+      </view>
+    </view>
+  </view>
+
   <image class="image" style="width: 280px; height: 155px; background-color: #eeeeee;" src="http://bmob-cdn-14564.b0.upaiyun.com/2018/12/19/adb77ae140500bac8017436d9ba73399.jpg"></image>
 </view>

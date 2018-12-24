@@ -1,5 +1,6 @@
 /**app.wxss**/
-
+/* 导入weui */
+@import 'weui.wxss';
 page {
   /* background-color: #E6E6E6; */
 }

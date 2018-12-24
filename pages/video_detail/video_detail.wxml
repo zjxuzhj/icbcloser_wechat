@@ -1,0 +1,4 @@
+<!--pages/img_detail/img_detail.wxml-->
+<video src="{{videoBean.video_url}}" style='width:100%' controls></video>
+  <text class="detail_text">{{videoBean.title}}</text>
+<ad unit-id="adunit-44b77c9134652acc" style='margin:50rpx,auto'></ad>

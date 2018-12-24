@@ -1,0 +1,11 @@
+/* pages/img_detail/img_detail.wxss */
+.detail_text {
+  display: flex;
+  align-items: center;
+  margin: 10rpx 10rpx;
+  padding: 20rpx 20rpx;
+}
+
+.ad{
+  margin: 20px,auto;
+}

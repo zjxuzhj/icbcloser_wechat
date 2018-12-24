@@ -1,12 +1,13 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/home/home",
-    
+    "pages/videolist/videolist",
+    "pages/video_detail/video_detail",
+    "pages/new/new",
     "pages/black/black",
-    "pages/normal/normal",
     "pages/hot/hot",
-    "pages/img_detail/img_detail"
+    "pages/img_detail/img_detail",
+    "pages/usercenter/usercenter"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -20,25 +21,24 @@
     "borderStyle": "black",
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "text": "最新"
+        "pagePath": "pages/home/home",
+        "text": "日志"
       },
       {
-        "pagePath": "pages/home/home",
-        "text": "更新日志"
+        "pagePath": "pages/new/new",
+        "text": "最新"
       },
-     
       {
         "pagePath": "pages/black/black",
         "text": "科技"
       },
       {
-        "pagePath": "pages/normal/normal",
-        "text": "标配"
-      },
-      {
         "pagePath": "pages/hot/hot",
         "text": "热门"
+      },
+      {
+        "pagePath": "pages/usercenter/usercenter",
+        "text": "我的"
       }
     ]
   }
