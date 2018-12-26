@@ -8,24 +8,21 @@
       <view class="title-input-counter">{{titleCount}}/500</view>
     </view>
     <view class="skill">
-      <input class="upload-title" placeholder="大营战法（可简写，两个战法间加一个空格即可）" placeholder-style="color:#b3b3b3;font-size:14px;" bindinput="handleTitleInput"></input>
+      <input class="upload-title" placeholder="大营战法（可简写，两个战法间加一个空格即可）" placeholder-style="color:#b3b3b3;font-size:14px;" bindinput="handleDaYingInput"></input>
     </view>
 
     <view class="skill">
-      <input class="upload-title" placeholder="中军战法（不用带武将名称）" placeholder-style="color:#b3b3b3;font-size:14px;" bindinput="handleTitleInput"></input>
+      <input class="upload-title" placeholder="中军战法（不用带武将名称）" placeholder-style="color:#b3b3b3;font-size:14px;" bindinput="handleZhongJunInput"></input>
     </view>
     <view class="skil_no_border">
-      <input class="upload-title" placeholder="前锋战法（例子：一夫 回马）" placeholder-style="color:#b3b3b3;font-size:14px;" bindinput="handleTitleInput"></input>
+      <input class="upload-title" placeholder="前锋战法（例子：一夫 回马）" placeholder-style="color:#b3b3b3;font-size:14px;" bindinput="handleQianFengInput"></input>
     </view>
-  
-
   </view>
 
   <view class="upload-images-area">
-
-    <!-- 添加图片按钮  -->
     <view class="upload-images-tool">
-      <button type="default" size="mini" bindtap="chooseImage" wx:if="{{images.length<6}}">添加图片</button>
+      <button type="warn" size="mini" bindtap="showMessage">注意事项</button>
+      <button type="default" size="default" bindtap="chooseImage" wx:if="{{images.length<6}}">添加图片</button>
     </view>
 
     <!-- 图片缩略图  -->
@@ -41,6 +38,6 @@
   </view>
 
   <!-- 提交表单按钮  -->
-  <button class="weui-btn" type="primary" bindtap="submitForm">提交</button>
+  <button class="weui-btn" type="primary" bindtap="submit">提交</button>
 
 </view>

@@ -33,7 +33,7 @@
 }
 
 .index_btn_li {
-  width: 20%;
+  width: 30%;
   height: 100px;
   float: left;
 }

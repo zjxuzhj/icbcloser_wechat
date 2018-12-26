@@ -1,8 +1,7 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/videolist/videolist",
-    "pages/video_detail/video_detail",
+    "pages/upload/upload",
     "pages/new/new",
     "pages/black/black",
     "pages/hot/hot",

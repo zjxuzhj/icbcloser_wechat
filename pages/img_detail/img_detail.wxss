@@ -5,3 +5,7 @@
   margin: 10rpx 10rpx;
   padding: 20rpx 20rpx;
 }
+
+.ad-class{
+  padding-top: 60px;
+}
