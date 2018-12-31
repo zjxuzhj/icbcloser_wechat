@@ -1,15 +1,14 @@
-<!--index.wxml--> 
-<view class="container"> 
-  <view class="menu_item" bindtap="intoDetailPage" data-index="{{index}}" wx:for="{{results}}" wx:for-index="index" wx:for-item="item" wx:key="menus"> 
-    <image class="img" mode='widthFix' src="{{results[index].img.url}}"></image> 
-    <text class="menu_text">{{results[index].title}}</text> 
-    <ad unit-id="adunit-44b77c9134652acc" style='margin:50rpx,auto' wx:if="{{index%15==5}}"></ad>
-  </view> 
-  
-  <view class="footer" wx:if="{{!hasMoreData}}"> 
-    没有更多了 
-  </view> 
-  <view class="footer" wx:if="{{hasMoreData}}"> 
-    加载中... 
-  </view> 
+<!--index.wxml-->
+<view class="container">
+  <view class="menu_item" bindtap="intoDetailPage" data-index="{{index}}" wx:for="{{results}}" wx:for-index="index" wx:for-item="item" wx:key="menus">
+    <image class="img" mode='widthFix' src="{{results[index].img.url}}"></image>
+    <text class="menu_text">{{results[index].title}}</text>
+    <ad unit-id="adunit-44b77c9134652acc" class="adview" wx:if="{{index%15==5}}"></ad>
+  </view>
+  <view class="footer" wx:if="{{!hasMoreData}}">
+    没有更多了
+  </view>
+  <view class="footer" wx:if="{{hasMoreData}}">
+    加载中...
+  </view>
 </view>

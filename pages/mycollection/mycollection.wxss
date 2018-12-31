@@ -1,0 +1,31 @@
+/* pages/mycollection/mycollection.wxss */
+
+.detail_text {
+  color: grey;
+  font-size: small;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /*这个数字是设置要显示省略号的行数*/
+  -webkit-box-orient: vertical;
+}
+
+.title_text {
+  position: flex;
+  top: 5px;
+  color: #48495f;
+}
+
+.container-collection {
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.brock-collection {
+  margin-top: 50rpx;
+}

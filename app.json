@@ -1,12 +1,13 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/upload/upload",
+    "pages/usercenter/usercenter",
     "pages/new/new",
+    "pages/upload/upload",
     "pages/black/black",
     "pages/hot/hot",
     "pages/img_detail/img_detail",
-    "pages/usercenter/usercenter"
+    "pages/mycollection/mycollection"
   ],
   "window": {
     "backgroundTextStyle": "light",

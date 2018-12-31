@@ -28,10 +28,10 @@
     </view>
 
     <!--考试流程-->
-    <view class="index_btn_li" bindtap="onExamProcess" hidden="true">
+    <view class="index_btn_li" bindtap="onShareAppMessage" hidden="true">
       <view class="index_btn_li_top">考试流程</view>
       <view class="index_btn_li_bottom">
-        <image src="/images/index_dj.png" class="index_btn_img"></image>
+        <image src="/images/skill.png" class="index_btn_img"></image>
       </view>
     </view>
 
@@ -39,7 +39,7 @@
     <view class="index_btn_li" bindtap="onAboutUs" hidden="true">
       <view class="index_btn_li_top">关于我们</view>
       <view class="index_btn_li_bottom">
-        <image src="/images/index_dj.png" class="index_btn_img"></image>
+        <image src="/images/skill.png" class="index_btn_img"></image>
       </view>
     </view>
   </view>

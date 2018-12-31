@@ -7,5 +7,10 @@
 }
 
 .ad-class{
-  padding-top: 60px;
+  padding-top: 50rpx;
+  padding-bottom: 50rpx;
+}
+
+button{
+  margin-right: 20rpx;
 }

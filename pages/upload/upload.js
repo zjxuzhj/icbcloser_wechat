@@ -1,4 +1,5 @@
 var Bmob = require('../../utils/bmob.js');
+var app=getApp();
 import {
   promisify
 } from '../../utils/promise.util'
@@ -47,7 +48,7 @@ Page({
   },
 
   chooseImage(e) {
-    var number=6-this.data.images.length
+    var number = 6 - this.data.images.length
     wx.chooseImage({
       count: number,
       sizeType: ['compressed'], //可选择原图或压缩后的图片
@@ -92,9 +93,12 @@ Page({
     file.save().then(res => {
       var skill = this.data.daying + "," + this.data.zhongjun + "," + this.data.qianfeng
       const query = Bmob.Query('image');
+      const pointer = Bmob.Pointer('_User')
+      const poiID = pointer.set(app.getCurrentUserObjectId())
       query.set("skill", skill)
       query.set("detail", this.data.title)
       query.set("img", res[0])
+      query.set('uid', poiID)
       var needuploadRes = new Array();
       if (res.length > 1) {
         for (let i = 1; i < res.length; i++) {
@@ -157,11 +161,11 @@ Page({
     }
   },
 
-  showMessage(){
+  showMessage() {
     wx.showModal({
       title: '注意事项',
       showCancel: false,
       content: '1.第一张为主战报，其他五张会出现在更多战报中。\r\n2.上传的战报需要经过审核，大概一天之内处理完成。 \r\n3.入选标准：低兵力打高兵力、低等级打高等级、低红星打高红心、相同水平取得大胜的战报。队伍克制的不算是大胜。 最好是和国家队或者各种标配的战报，因为强力的队伍组合一般玩家都会给好的技能，能比较好的评估战斗力，如果是殴打黑科技那就难以判断。'
     })
-  }
+  },
 })

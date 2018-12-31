@@ -1,3 +1,4 @@
+var Bmob = require('../../utils/bmob.js');
 // pages/usercenter/usercenter.js
 Page({
 
@@ -13,9 +14,9 @@ Page({
    */
   onLoad: function () {
     var app = getApp();
-    var openid = app.globalData.openid;
+    //获取用户当前信息
     this.setData({
-      openid: openid
+      openid: app.getCurrentUserObjectId()
     })
   },
 
@@ -52,5 +53,11 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {}
+  onShareAppMessage: function () {},
+
+  myCollections: function () {
+    wx.navigateTo({
+      url: ''
+    })
+  }
 })

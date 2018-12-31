@@ -20,3 +20,14 @@
   border: 2px solid #fff;  
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  
 }
+
+.text-bottom{
+  margin-top: 100rpx;
+  display: flex;  
+  flex-direction: column;  
+  align-items: center;  
+  position: relative;  
+  text-align:right;
+  font-size: small;
+  color:#999999;
+}

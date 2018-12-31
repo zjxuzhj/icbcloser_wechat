@@ -29,7 +29,7 @@
   width: 90%;
   height: 100px;
   background-color: #fff;
-  margin: 0px auto;
+  margin: 50rpx auto;
 }
 
 .index_btn_li {

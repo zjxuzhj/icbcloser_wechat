@@ -78,3 +78,7 @@ page {
   justify-content: center;
   align-items: center;
 }
+
+.adview {
+  padding-top: 50rpx;
+}

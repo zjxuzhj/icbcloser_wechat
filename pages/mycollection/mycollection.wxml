@@ -1,0 +1,12 @@
+<view class="container-collection">
+  <view class='brock-collection' bindtap="intoDetailPage" data-index="{{index}}" wx:for="{{results}}" wx:for-index="index" wx:for-item="item" wx:key="menus">
+    <text class="title_text">{{results[index].title}}</text>
+    <text class="detail_text">{{results[index].detail}}</text>
+  </view>
+  <view class="footer" wx:if="{{!hasMoreData}}">
+    没有更多了
+  </view>
+  <view class="footer" wx:if="{{hasMoreData}}">
+    加载中...
+  </view>
+</view>

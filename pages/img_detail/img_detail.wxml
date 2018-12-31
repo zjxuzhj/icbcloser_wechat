@@ -9,5 +9,9 @@
     <text class="detail_skill_text">前锋</text>
   </view>
   <text class="menu_text" style='margin:20rpx'>{{imageBean.skill}}</text>
+  <view class="vertical" style='margin-top:20rpx'>
+    <button type="default" size="mini" plain="primary" bindtap='moreImage'>更多战报</button>
+    <button type="warn" size="mini" plain="{{plain}}" bindtap='collection'>{{isCollected ? "已收藏" : "未收藏"}}</button>
+  </view>
   <ad unit-id="adunit-44b77c9134652acc" class='ad-class' wx:if="{{number>5}}"></ad>
 </view>

@@ -7,8 +7,23 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs) 
+    this.getCurrentUserObjectId();
   },
   globalData: {
     userInfo: null
-  }
+  },
+  getCurrentUserObjectId: function(){
+    var app = getApp();
+    //获取用户当前信息
+    let current = Bmob.User.current()
+    if (current == null) {
+      Bmob.User.auth().then(res => {
+        return res.objectId;
+      }).catch(err => {
+        console.log(err)
+      });
+    } else {
+      return current.objectId;
+    }
+  },
 })
