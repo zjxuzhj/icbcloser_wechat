@@ -28,4 +28,5 @@
 
 .brock-collection {
   margin-top: 50rpx;
+  width: 100%
 }

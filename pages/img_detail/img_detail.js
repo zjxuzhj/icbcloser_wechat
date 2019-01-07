@@ -93,12 +93,19 @@ Page({
     })
   },
   moreImage: function() {
-    wx.showToast({
-      title: '将在下版本支持',
-      icon: 'none',
-      duration: 2000,
-      mask: false,
-    })
+    if (this.data.imageBean.moreImg != undefined && this.data.imageBean.moreImg.length > 1) {
+      var imageBean = JSON.stringify(this.data.imageBean)
+      wx.navigateTo({
+        url: '../morepage/morepage?imageBean=' + imageBean
+      })
+    } else {
+      wx.showToast({
+        title: '暂无更多战报',
+        icon: 'none',
+        duration: 2000,
+        mask: false,
+      })
+    }
   },
   collection: function() {
     wx.showLoading({

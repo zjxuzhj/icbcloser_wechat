@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="image_item" wx:for="{{imageBean.moreImg}}" wx:for-index="index" bindtap="showImage" data-index="{{index}}" wx:for-item="item" wx:key="menus">
+     <image class="img" mode='widthFix' src="{{imageBean.moreImg[index]}}"></image> 
+      <text  class="menu_text" >{{results[index].title}}</text>
+    </view>
+      <ad unit-id="adunit-44b77c9134652acc" class="adview"></ad>
+    <view class="footer" wx:if="{{!hasMoreData}}">
+    没有更多了
+  </view>
+  <view class="footer" wx:if="{{hasMoreData}}">
+    加载中...
+  </view>
+</view>

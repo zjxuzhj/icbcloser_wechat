@@ -1,42 +1,27 @@
-var Bmob = require('../../utils/bmob.js');
-var app = getApp();
-// pages/mycollection/mycollection.js
+// pages/morepage/morepage.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    results: [],
+    imageBean: [],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    wx.showLoading({
-      title: '请等待',
-    })
-    var that = this //不要漏了这句，很重要 
-    const query = Bmob.Query("image");
-    query.statTo("where", '{"collections":{"$inQuery":{"where":{"objectId":"' + app.getCurrentUserObjectId() + '"},"className":"_User"}}}');
-    query.order("-iid");
-    query.find().then(res => {
-      console.log(res)
-      this.setData({
-        results: res,
-      })
-      wx.hideLoading()
-    });
-  },
-  
-  intoDetailPage: function (e) {
-    var index = parseInt(e.currentTarget.dataset.index)
-    var imageBean = JSON.stringify(this.data.results[index])
-    wx.navigateTo({
-      url: '../img_detail/img_detail?imageBean=' + imageBean
+    var that = this
+    var imageBean = JSON.parse(options.imageBean);
+    console.log(imageBean.moreImg)
+    var int = Math.floor(Math.random() * 10)
+    that.setData({
+      imageBean: imageBean,
+      number: int
     })
   },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -83,7 +68,12 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function() {
-
+  
   },
-
+  showImage: function (res) {
+    var index = res.currentTarget.dataset.index;
+    wx.previewImage({
+      urls: [this.data.imageBean.moreImg[index]] // 需要预览的图片http链接列表
+    })
+  },
 })

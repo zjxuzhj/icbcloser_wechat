@@ -7,7 +7,9 @@
     "pages/black/black",
     "pages/hot/hot",
     "pages/img_detail/img_detail",
-    "pages/mycollection/mycollection"
+    "pages/mycollection/mycollection",
+    "pages/morepage/morepage",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -3,8 +3,18 @@
   <scroll-view scroll-y style="height: 240px;" class='text_border '>
     <text class="update_text">{{updateString}}</text>
   </scroll-view>
-  <!--战报上传-->
+
+
+
   <view class="index_btn_box">
+    <!--搜索战报-->
+    <view class="index_btn_li" bindtap="onSearch">
+      <view class="index_btn_li_bottom">
+        <image src="/images/search.png" class="index_btn_img"></image>
+      </view>
+      <view class="index_btn_li_top">搜索战报</view>
+    </view>
+    <!--战报上传-->
     <view class="index_btn_li" bindtap="onUpload">
       <view class="index_btn_li_bottom">
         <image src="/images/upload.png" class="index_btn_img"></image>
@@ -21,18 +31,10 @@
 
     <!--五级地技能-->
     <view class="index_btn_li" bindtap="onWuji">
-     <view class="index_btn_li_bottom">
-        <image src="/images/skill.png" class="index_btn_img"></image>
-      </view>
-      <view class="index_btn_li_top">征服五地技能</view>
-    </view>
-
-    <!--考试流程-->
-    <view class="index_btn_li" bindtap="onShareAppMessage" hidden="true">
-      <view class="index_btn_li_top">考试流程</view>
       <view class="index_btn_li_bottom">
         <image src="/images/skill.png" class="index_btn_img"></image>
       </view>
+      <view class="index_btn_li_top">五级地技能</view>
     </view>
 
     <!--关于我们-->

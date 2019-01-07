@@ -1,0 +1,33 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-search-bar-new">
+      <view class="weui-search-bar__form-new">
+        <view class="weui-search-bar__box-new">
+          <icon class="weui-icon-search_in-box-new" type="search" size="14"></icon>
+          <input type="text" class="weui-search-bar__input-new" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" confirm-type="search" bindconfirm="search" />
+          <view class="weui-icon-clear-new" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+            <icon type="clear" size="14"></icon>
+          </view>
+        </view>
+        <label class="weui-search-bar__label-new" hidden="{{inputShowed}}" bindtap="showInput">
+          <icon class="weui-icon-search-new" type="search" size="14"></icon>
+          <view class="weui-search-bar__text-new">搜索</view>
+        </label>
+      </view>
+      <view class="weui-search-bar__cancel-btn-new" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+    </view>
+  </view>
+  <view class="container">
+    <view class="menu_item" bindtap="intoDetailPage" data-index="{{index}}" wx:for="{{results}}" wx:for-index="index" wx:for-item="item" wx:key="menus">
+      <image class="img" mode='widthFix' src="{{results[index].img.url}}"></image>
+      <text class="menu_text">{{results[index].title}}</text>
+      <ad unit-id="adunit-44b77c9134652acc" class="adview" wx:if="{{index%15==5}}"></ad>
+    </view>
+    <view class="footer" wx:if="{{!hasMoreData}}">
+      没有更多了
+    </view>
+    <view class="footer" wx:if="{{hasMoreData}}">
+      (进入页面请搜索武将名) 加载中...
+    </view>
+  </view>
+</view>
